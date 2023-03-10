@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Xiao Fan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape FAN Xiao} \\ \vspace{1pt}
+    \small +86-17367078730 $|$ \href{mailto:tommyfanzju@gmail.com}{\underline{tommyfanzju@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/xiao-fan-6a21b7171}{\underline{linkedin.com/in/xiao-fan-6a21b7171}} $|$
+    \href{https://fanxiao.tech}{\underline{https://fanxiao.tech}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zhejiang University (ZJU)}{Hangzhou, China}
+      {Bachelor of Engineeing in Electrical Engineering - Edison Honor Class}{Sept. 2016 -- Jul. 2020}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.93 / 4.0 (90.64 / 100) \qquad $|$ \qquad Third year GPA: 3.96 / 4.0 (90.97 / 100) \qquad $|$ \qquad Rank: 3 / 90} 
+      \resumeItemListEnd
+    \resumeSubheading
+      {Columbia University in the City of New York}{New York, NY}
+      {Visiting student}{Sept. 2018 -- Dec. 2018}
+      \resumeItemListStart
+        \resumeItem{GPA: 4.0 / 4.3}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of California, Los Angeles}{Los Angeles, CA}
+      {Visiting student - Cross Disciplinary Scholarship of Science and Technology (CSST) program}{Jul. 2019 -- Sept. 2019}
+      \resumeItemListStart
+        \resumeItem{GPA: 4.0 / 4.0}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sliding Mode Observer-Based Sensorless FOC Control for PMSM}{Sept. 2018 -- Dec 2018}
+      {Columbia University}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Developed a conventional FOC with angle sensor attached to the system which is feasible in the PLECS}
+        \resumeItem{Exploited the Sliding-Mode Observer (SMO) to replace the sensor and compare the performances of the two different strategies}
+        \resumeItem{Made alternates on the PID parameter and sliding-mode to decrease the response time and overshoot as well as improve the energy efficiency based on the simulation result of PMSM performance via PLECS platform}
+        \resumeItem{Used DSP (TI C2000 series), motor driver (DRV8301) and mini-scaled sensorless PMSM to implement the system based on the parameters adopted from simulation, then adjust it to optimize the performance}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Stethoscope Pi}{Jul. 2019 -- Sept. 2019}
+      {UCLA HCI lab}{Los Angeles, CA}
+      \resumeItemListStart
+        \resumeItem{Designed the preprocess circuit schematic and simulated in PSpice according to the requirements of technical parameters to test its amplification and low pass filter functions}
+        \resumeItem{Completed operational amplifier chip selection, capacitor and resistor selection, component packaging determination. Devised the preprocess circuit PCB in Altium Designer. Conducted PCB printing, PCB soldering, and PCB testing}
+        \resumeItem{Selected the microphone after comparing dozens of models in consideration of the diameter, sensitivity, power supply voltage, price, ease of installation, etc. and then mounted it on the chest piece}
+        \resumeItem{Implemented and compared the denoising algorithm, heart sound segmentation algorithm using Normalized Average Shannon Energy (NASE)}
+        \resumeItem{Implemented Mel Frequency Cepstral Coefficients (MFCC) and frequency power spectrum feature extraction}
+        \resumeItem{Used Support Vector Machine (SVM) classifier to train the model based on the online heart sound library dataset and collaborated with a Singaporean cardiovascular doctor to verify the outcome}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Raspberry Pi-Based Lab Power Control System}{Mar. 2018 -- Jul. 2018}
+      {Zhejiang University}{Hangzhou, China}
+      \resumeItemListStart
+        \resumeItem{Configurated Raspberry Pi’s environment and dependencies, including OpenCV installation, CSI camera mounting and driver testing}
+        \resumeItem{Designed and built the relay driver PCB to implement power switch controlled by GPIOs of the Raspberry Pi}
+        \resumeItem{Connect the DHT11 temperature and humidity sensor with Raspberry Pi using I$^2$C protocol}
+        \resumeItem{Developed the Android APP using socket programming to realize communication between Raspberry Pi and smartphone. The app allows users to directly switch on or off the power in the lab as well as enable or disable the facial recognition and motion detection. The temperature and humidity of lab is also displayed in real time. The power can be cut off emergently in case these parameters exceed certain thresholds}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Graded 99/100 by mentor. Case to be included in Prof. Sun’s textbook ‘Practical Tutorial on Signal Analysis and Processing’ (Publisher: Publishing House of Electronics Industry)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+  %---------HONORS AND AWARDS-------------
+  \section{Honors \& Awards}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+     \small{\item{
+      \textbf{Outstanding Graduates of Zhejiang Province}{\quad Zhejiang Education Dept.} \hfill Jul. 2020\\
+      \textbf{Outstanding Graduates of Zhejiang University}{\quad ZJU} \hfill  Jul. 2020\\
+      \textbf{Outstanding Undergraduate Thesis of Zhejiang University}{\quad ZJU} \hfill Jul. 2020\\
+      \textbf{Outstanding Student Honor}{\quad ZJU} \hfill Dec. 2020 \\
+      \textbf{Wang Guosong Scholarship}{\quad Highest honor of Electrical Engineering College, ZJU} \hfill Oct. 2019 \\
+      \textbf{National Scholarship}{\quad the Minister of Education of the P.R.C}  \hfill Dec. 2018\\
+      \textbf{First Prize of the National Talents Training Base}{\quad ZJU} \hfill Dec. 2018\\
+      \textbf{First-Class Scholarship for Outstanding Merits}{\quad ZJU} \hfill Dec. 2018\\
+      \textbf{First-Class Scholarship for Outstanding Students}{\quad ZJU} \hfill Dec. 2018\\
+      \textbf{Silan Inc Scholarship}{\quad Silan Inc.} \hfill Dec. 2018\\
+      \textbf{First-Class Scholarship for Outstanding Students}{\quad ZJU} \hfill Dec. 2017\\
+      \textbf{First-Class Scholarship for Outstanding Merits}{\quad ZJU} \hfill Dec. 2017\\
+      \textbf{Provincial Government Prize}{\quad Zhejiang Education Dept.} \hfill Sept. 2017\\
+      \textbf{First Place of English Reading Contest of Zhejiang University}{\quad ZJU} \hfill Jul. 2017\\
+      \textbf{Third Place of College Physics Competition of Zhejiang Province}{\quad Physics Association of Zhejiang Province} \\ \hfill May 2017     }}
+  \end{itemize}
+  %--------------------------------------
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    {\textbf{FAN Xiao}, PAN Benren, et al, } {\textbf{Research of Embedded Simulation Platform for DC-DC Power Converters}, }
+    {\textit{Electrical \& Energy Management Technology}, } {2020(9): 63-67 }
+    {DOI: 10.16628/j.cnki.2095-8188.2020.09.012}
+    }}
+ \end{itemize}
+
+%----------------------------------------
+
+%----------------PATENTS-----------------
+\section{Granted Patents}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    {\textbf{FAN Xiao}, HU Shuang, } {\textbf{Pupil Detection Method \& Equipment Based on Dual Camera}, }
+    {Application No.: CN202010844723.5}
+    }}
+    \small{\item{
+    {CHEN Xiang, \textbf{FAN Xiao}, } {\textbf{In-car Mixed Reality Display Method \& Equipment}, }
+    {Application No.: CN202011089648.2}
+    }}
+    \small{\item{
+    {CHEN Xiang, \textbf{FAN Xiao}, } {\textbf{Automated Driving Model Sampling, Training Method, Equipment \& System}, }
+    {Application No.: CN20201129255.X}
+    }}
+ \end{itemize}
+
+%----------------------------------------
+
+%---------EXTRACURRICULAR ACTIVITIES-----
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Department Head}{Sept. 2016 -- June 2017}
+      {Organization Department of Robotics Association, ZJU}{Hangzhou, China}
+        \resumeItem{Organized the Third ZJU Soft Robotics Innovation Match and Final Competition of International Conference on Robotics and Automation (ICRA) 2018 Soft Material Robot Challenge of China}
+
+    \resumeSubheading
+      {Team Leader}{Nov. 2016 -- Apr. 2017}
+      {Youth Volunteers Association, ZJU}{Hangzhou, China}
+        \resumeItem{Provided instruction and guidance services in Westbrook National Wetland Museum Volunteer Program}
+
+    \resumeSubheading
+      {Team Member}{Sept. 2016}
+      {Freshmen Cup Basketball Match, ZJU}{Hangzhou, China}
+      \resumeItem{Participated the Freshman Cup Basketball Match of ZJU as a freshman and got the second runner-up}
+
+\resumeSubHeadingListEnd
+%----------------------------------------
+
+
+%----------------SKILLS------------------
+\section{Skills \& Hobbies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Javascript, Python, Matlab/Simulink, Bash, Markdown, \LaTeX} \\
+     \textbf{Developer Tools}{: Git, Visual Studio Code, Altium Designer, Unreal Engine} \\
+     \textbf{Hobbies}{: Basketball, Jogging, Table tennis}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
