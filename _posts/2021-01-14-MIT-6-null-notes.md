@@ -1049,7 +1049,6 @@ https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 `develop`分支：开发分支
 
-![Git flow workflow - Feature Branches](https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg?cdnVersion=1398)
 
 `feature`分支：每个单独的feature作为一个分支，以`develop`作为父分支
 
